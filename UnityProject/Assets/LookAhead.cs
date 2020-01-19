@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Gives user a certain amount of look ahead time so they know to press the drum on time
 /// </summary>
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class LookAhead : MonoBehaviour
 {
 

@@ -2712,7 +2712,7 @@ PrefabInstance:
         type: 3}
       propertyPath: DrumPrefab
       value: 
-      objectReference: {fileID: 8369153038944462119, guid: 3f01ccf2242483446af7b79f0cce5306,
+      objectReference: {fileID: 3664064294015205751, guid: 7b9c955f2852dcc4899e13b85695f36e,
         type: 3}
     - target: {fileID: 1780829759139288699, guid: 4f1ec3043ef4725439a97413051e036c,
         type: 3}
@@ -8631,7 +8631,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a6c7a7cff515b4548ac1d9932464b34b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9722,6 +9722,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d1af06b0fbfb8149bd4a488f39af65d, type: 3}
+--- !u!1001 &3263779435999145882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205745, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205751, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_Name
+      value: ML_DrumPad_New_TEMP
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664064294015205751, guid: 7b9c955f2852dcc4899e13b85695f36e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b9c955f2852dcc4899e13b85695f36e, type: 3}
 --- !u!4 &5006512735642259175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6832088815621980040, guid: 9ba653d5ac586da4d9623af0e9296c7f,
@@ -9898,77 +9972,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5818549887900161996}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7761722294755806154
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3085049177612056969, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462113, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369153038944462119, guid: 3f01ccf2242483446af7b79f0cce5306,
-        type: 3}
-      propertyPath: m_Name
-      value: ML_DrumPad_New
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3f01ccf2242483446af7b79f0cce5306, type: 3}

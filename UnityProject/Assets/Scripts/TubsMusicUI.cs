@@ -42,6 +42,7 @@ public class TubsMusicUI : MonoBehaviour
       }
 
       public GameObject Cursor = null;
+      public int lastCursorIdx = -1;
       public List<GameObject> Chunks = new List<GameObject>();
    }
 
@@ -190,6 +191,11 @@ public class TubsMusicUI : MonoBehaviour
             {
                r.Cursor.transform.position = c.transform.position;
                r.Cursor.SetActive(true);
+               r.lastCursorIdx = curChunkIdx;
+            }
+            else if(r.lastCursorIdx >= 0)
+            {
+               r.Cursor.transform.position = r.Chunks[r.lastCursorIdx].GetComponent<TubChunk>().transform.position;
             }
          }
       }
