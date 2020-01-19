@@ -80,7 +80,7 @@ public class DrumFeedback : MonoBehaviour
 
             float u = Mathf.InverseLerp(lookaheadStart, lookaheadEnd, curBeat);
 
-            Debug.Log("curBeat: " + curBeat + " prevBeat: " + _prevBeat + " lookatStart " + lookaheadStart + " lookaheadEnd " + lookaheadEnd + " u: " + u);
+            //Debug.Log("curBeat: " + curBeat + " prevBeat: " + _prevBeat + " lookatStart " + lookaheadStart + " lookaheadEnd " + lookaheadEnd + " u: " + u);
 
             LookaheadAnimator.speed = 0.0f;
             LookaheadAnimator.Play(LookaheadAnimatorState, LookaheadAnimatorLayer, u);

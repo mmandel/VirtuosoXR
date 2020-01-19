@@ -47,6 +47,7 @@ public class EffectDrumPad : MonoBehaviour
    public void EmitMiss()
    {
        ScaleMiss();
+      EmitFXChainMiss();
    }
 
    /// <summary>
@@ -57,25 +58,41 @@ public class EffectDrumPad : MonoBehaviour
       OnBeatAnimator.SetTrigger("Miss");
    }
 
-   public ParticleSystem[] particleSystems;
+   public ParticleSystem[] particleSystemsHit;
+   public ParticleSystem[] particleSystemsMiss;
 
-    /// <summary>
-    /// Trigger all particle systems
-    /// </summary>
-    public void EmitFXChain()
+   /// <summary>
+   /// Trigger all particle systems
+   /// </summary>
+   public void EmitFXChain()
     {
-        for (int i = 0; i < particleSystems.Length; i++) { 
+        for (int i = 0; i < particleSystemsHit.Length; i++) { 
 
-            ParticleSystem ps = particleSystems[i];
+            ParticleSystem ps = particleSystemsHit[i];
 
-            ParticleSystem.EmitParams emitOverride = new ParticleSystem.EmitParams();
-            emitOverride.startLifetime = 0.5f;
-            ps.Emit(emitOverride, 500);
+            //ParticleSystem.EmitParams emitOverride = new ParticleSystem.EmitParams();
+            ///emitOverride.startLifetime = 0.5f;
+            //ps.Emit(emitOverride, 500);
+            ps.Play();
         }
     }
 
-    public void Start()
+   public void EmitFXChainMiss()
+   {
+      for (int i = 0; i < particleSystemsMiss.Length; i++)
+      {
+
+         ParticleSystem ps = particleSystemsMiss[i];
+
+         //ParticleSystem.EmitParams emitOverride = new ParticleSystem.EmitParams();
+         //emitOverride.startLifetime = 0.5f;
+         //ps.Emit(emitOverride, 500);
+         ps.Play();
+      }
+   }
+
+   public void Start()
     {
-        particleSystems = this.gameObject.GetComponentsInChildren<ParticleSystem>();
+       // particleSystems = this.gameObject.GetComponentsInChildren<ParticleSystem>();
     }
 }
